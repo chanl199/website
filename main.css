@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 50px;
+  gap: 70px;
   padding: 0px 25px;
   position: fixed;
   top:0;
@@ -26,7 +26,7 @@ body {
   background-size: 9px 9px;
 }
 
-.navbar a, #project-tab {
+.navbar a, #contact-tab {
   color: white;
   text-decoration: none;
   font-size: 30px;
@@ -37,7 +37,7 @@ body {
   font-style: normal;
 }
 
-.navbar a:hover, #project-tab:hover {
+.navbar a:hover, #contact-tab:hover {
   color: #26e2f3;
   scale: 1.3;
 }
@@ -95,11 +95,11 @@ body {
  background: #e23fa1;
 }
 
-.project-name {
-    font-size: 16px;
+.contact-name {
+    font-size: 17px;
 }
 
-#project-head {
+#contact-head {
     font-size: 45px;
     color: #e23fa1;
 }
