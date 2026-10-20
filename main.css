@@ -1,0 +1,368 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #e23fa1;
+  box-sizing: border-box;
+}
+
+#sideC {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  padding: 0px 25px;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 90px;
+  z-index: 20;
+  box-sizing: border-box;
+  background-image: radial-gradient( circle, #ef7ac0 3px, transparent 0px);
+  background-size: 9px 9px;
+}
+
+.navbar a, #project-tab {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 21;
+  font-family: "Galindo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar a:hover, #project-tab:hover {
+  color: #26e2f3;
+  scale: 1.3;
+}
+
+#side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  padding: 15px;
+  background: #26e2f3;
+  color: black;
+  font-size: 20px;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease, visibility 0.3s ease;
+  z-index: 22;
+  font-family: "Galindo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#sideC:checked~#side {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+#close-button {
+  display: block;
+  padding: 5px 0 15px;
+  text-align: right;
+  color:black;
+  font-size: 24px;
+  cursor: pointer;
+}
+#close-button:hover {
+  color: #e23fa1;
+}
+
+#side h2 {
+  margin-top: 5px;
+  font-size: 35px;
+}
+#side a {
+  display: block;
+  padding: 12px 10px;
+  color: black;
+  text-decoration: none;
+  font-family: "Galindo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#side a:hover {
+ background: #e23fa1;
+}
+
+.project-name {
+    font-size: 16px;
+}
+
+#project-head {
+    font-size: 45px;
+    color: #e23fa1;
+}
+
+#main {
+  padding: 25px;
+  position: relative;
+}
+
+#main section {
+  min-height: 250px;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    gap: 20px;
+    padding: 18px 15px;
+  }
+
+  #main {
+    padding: 15px;
+  }
+}
+
+.diff-fonts{
+    color: white;
+    cursor: default;
+}
+
+#L {
+    font-family: "birthstone-bounce", sans-serif;
+    font-weight: 500;
+    font-size:270px;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    z-index: 2;
+}
+#L:hover {
+    color: #fb80ca;
+    transition: transform 0.5s ease;
+    scale: 1.2;
+}
+
+#I {
+    font-family: "borel", sans-serif;
+    font-weight: 400;
+    font-size: 220px;
+    position: absolute;
+    top: 195px;
+    left: 295px;
+    z-index: 2;
+}
+#I:hover {
+    color: #fb80ca;
+    transition: transform 0.5s ease;
+    scale: 1.2;
+}
+
+#N-1 {
+  font-family: "Libertinus Keyboard", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 230px;
+  position:absolute;
+  top: 205px;
+  left: 395px;
+  z-index: 2;
+}
+#N-1:hover {
+    color: #fb80ca;
+    transition: transform 0.5s ease;
+    scale: 1.2;
+}
+
+#D{
+    font-family: "faculty-glyphic", sans-serif;
+    font-weight: 400;
+    font-size: 210px;
+    position: absolute;
+    top: 210px;
+    left: 640px;
+    z-index: 2;
+}
+#D:hover {
+    color: #fb80ca;
+    transition: transform 0.5s ease;
+    scale: 1.2;
+}
+
+#A-1{
+    font-family: "bruno-ace", sans-serif;
+    font-weight: 400;
+    font-size: 200px;
+    position: absolute;
+    top: 250px;
+    left: 799px;
+    z-index: 2;
+}
+#A-1:hover {
+    color: #fb80ca;
+    transition: transform 0.5s ease;
+    scale: 1.2;
+}
+
+#C{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 250px;
+  position: absolute;
+  top: 470px;
+  left: 90px;
+  z-index: 2;
+}
+#C:hover {
+    color: #fb80ca;
+    transition: transform 0.5s ease;
+    scale: 1.2;
+}
+
+#H{
+  font-family: "Glass Antiqua", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 225px;
+  position: absolute;
+  top: 460px;
+  left: 330px;
+  z-index: 2;
+}
+#H:hover {
+    color: #fb80ca;
+    transition: transform 0.5s ease;
+    scale: 1.2;
+}
+
+#A-2{
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 300px;
+  position: absolute;
+  top: 420px;
+  left: 360px;
+  z-index: 2;
+}
+#A-2:hover {
+    color: #fb80ca;
+    transition: transform 0.5s ease;
+    scale: 1.2;
+}
+
+#N-2{
+  font-family: "Exile", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 230px;
+  position: absolute;
+  top: 445px;
+  left: 640px;
+  z-index: 2;
+}
+#N-2:hover {
+    color: #fb80ca;
+    transition: transform 0.5s ease;
+    scale: 1.2;
+}
+
+#big-star{
+    position: absolute;
+    font-size: 600px;
+    top: 90px;
+    left: 780px;
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),color 0.7s ease;
+}
+#sideC:checked~#big-star {
+     color: #26e2f3;
+    cursor: default;
+    scale: 1.5;
+    transform: scale(1.3) rotate(15deg);
+}
+#big-star:hover {
+    color: #26e2f3;
+    cursor: default;
+    scale: 1.5;
+    transform: scale(1.3) rotate(15deg);
+}
+
+.star-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  color: #26e2f3;
+}
+
+.star1 {
+  top: 15%;
+  left: 15%;
+  font-size: 30px;
+}
+
+.star2 {
+  top: 22%;
+  left: 60%;
+  font-size: 20px;
+}
+
+.star3 {
+  top: 32%;
+  left: 32%;
+  font-size: 35px;
+}
+
+.star4 {
+  top: 65%;
+  left: 85%;
+  font-size: 25px;
+}
+
+.star5 {
+  top: 78%;
+  left: 20%;
+  font-size: 30px;
+}
+
+.star6 {
+  top: 50%;
+  left: 60%;
+  font-size: 20px;
+}
+
+.star7 {
+  top: 30%;
+  left: 90%;
+  font-size: 35px;
+}
+
+.star8 {
+  top: 90%;
+  left: 50%;
+  font-size: 22px;
+}
+
+.star9 {
+  top: 15%;
+  left: 45%;
+  font-size: 16px;
+}
+
+.star10 {
+  top: 65%;
+  left: 5%;
+  font-size: 30px;
+}
+.star11 {
+    top: 90%;
+    left: 90%;
+    font-size: 25px;
+}
+
